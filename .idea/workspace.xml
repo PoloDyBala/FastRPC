@@ -5,16 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bc0e4e9b-6891-4070-966d-5aff8b626359" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yuan/Client/IOClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yuan/Client/TestClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yuan/Client/proxy/ClientProxy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yuan/common/Message/RpcRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yuan/common/Message/RpcResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yuan/common/pojo/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yuan/common/service/Impl/UserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yuan/common/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yuan/Server/TestServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yuan/Server/provider/ServiceProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yuan/Server/server/RpcServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yuan/Server/server/work/WorkThread.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yuan/Client/proxy/ClientProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yuan/Client/proxy/ClientProxy.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +67,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1739964863580</updated>
-      <workItem from="1739964864812" duration="3890000" />
+      <workItem from="1739964864812" duration="7129000" />
     </task>
     <servers />
   </component>
