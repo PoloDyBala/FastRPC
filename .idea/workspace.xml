@@ -5,11 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bc0e4e9b-6891-4070-966d-5aff8b626359" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yuan/Client/netty/nettyInitializer/NettyClientInitializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yuan/Client/rpcClient/RpcClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yuan/Client/rpcClient/impl/NettyRpcClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yuan/Client/netty/handler/NettyClientHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yuan/Client/rpcClient/impl/SimpleSocketRpcClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yuan/Server/netty/handler/NettyRPCServerHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yuan/Server/netty/nettyInitializer/NettyServerInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yuan/Server/server/impl/NettyRPCRPCServer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yuan/Client/netty/nettyInitializer/NettyClientInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yuan/Client/netty/nettyInitializer/NettyClientInitializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yuan/Client/proxy/ClientProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yuan/Client/proxy/ClientProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yuan/Client/rpcClient/impl/NettyRpcClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yuan/Client/rpcClient/impl/NettyRpcClient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/yuan/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yuan/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yuan/Server/TestServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yuan/Server/TestServer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,6 +63,40 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RunManager" selected="应用程序.TestClient">
+    <configuration name="TestClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.yuan.Client.TestClient" />
+      <module name="FastRPC" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yuan.Client.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.yuan.Server.TestServer" />
+      <module name="FastRPC" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yuan.Server.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="应用程序.TestClient" />
+        <item itemvalue="应用程序.TestServer" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="默认任务">
@@ -68,7 +108,8 @@
       <workItem from="1739964864812" duration="8987000" />
       <workItem from="1740054041314" duration="3199000" />
       <workItem from="1740104432637" duration="955000" />
-      <workItem from="1740135375391" duration="5078000" />
+      <workItem from="1740135375391" duration="5483000" />
+      <workItem from="1740190950436" duration="4364000" />
     </task>
     <servers />
   </component>
