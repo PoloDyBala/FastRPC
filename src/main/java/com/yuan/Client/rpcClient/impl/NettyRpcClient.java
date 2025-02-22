@@ -2,6 +2,8 @@ package com.yuan.Client.rpcClient.impl;
 
 import com.yuan.Client.netty.nettyInitializer.NettyClientInitializer;
 import com.yuan.Client.rpcClient.RpcClient;
+import com.yuan.Client.serverCenter.ServiceCenter;
+import com.yuan.Client.serverCenter.ZKServiceCenter;
 import com.yuan.common.Message.RpcRequest;
 import com.yuan.common.Message.RpcResponse;
 import io.netty.bootstrap.Bootstrap;
@@ -12,14 +14,14 @@ import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.nio.NioSocketChannel;
 import io.netty.util.AttributeKey;
 
+import java.net.InetSocketAddress;
+
 public class NettyRpcClient implements RpcClient {
-    private String host;
-    private int port;
     private static final Bootstrap bootstrap;
     private static final EventLoopGroup eventLoopGroup;
-    public NettyRpcClient(String host,int port){
-        this.host=host;
-        this.port=port;
+
+    private ServiceCenter serviceCenter;
+    public NettyRpcClient() {this.serviceCenter = new ZKServiceCenter();
     }
     //netty客户端初始化
     static {
@@ -31,6 +33,9 @@ public class NettyRpcClient implements RpcClient {
     }
     @Override
     public RpcResponse sendRequest(RpcRequest request) {
+        InetSocketAddress address = serviceCenter.serviceDiscovery(request.getInterfaceName());
+        String host = address.getHostName();
+        int port = address.getPort();
         try {
             //创建一个channelFuture对象，代表这一个操作事件，sync方法表示堵塞直到connect完成
             ChannelFuture channelFuture  = bootstrap.connect(host, port).sync();

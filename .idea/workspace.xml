@@ -5,17 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bc0e4e9b-6891-4070-966d-5aff8b626359" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yuan/Client/netty/handler/NettyClientHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yuan/Client/rpcClient/impl/SimpleSocketRpcClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yuan/Server/netty/handler/NettyRPCServerHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yuan/Server/netty/nettyInitializer/NettyServerInitializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yuan/Server/server/impl/NettyRPCRPCServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yuan/Client/serverCenter/ServiceCenter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yuan/Client/serverCenter/ZKServiceCenter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yuan/Server/serviceRegister/ServiceRegister.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yuan/Server/serviceRegister/impl/ZKServiceRegister.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yuan/Client/netty/nettyInitializer/NettyClientInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yuan/Client/netty/nettyInitializer/NettyClientInitializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yuan/Client/TestClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yuan/Client/TestClient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/yuan/Client/proxy/ClientProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yuan/Client/proxy/ClientProxy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/yuan/Client/rpcClient/impl/NettyRpcClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yuan/Client/rpcClient/impl/NettyRpcClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yuan/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yuan/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/yuan/Server/TestServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yuan/Server/TestServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yuan/Server/provider/ServiceProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yuan/Server/provider/ServiceProvider.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,6 +62,11 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.yuan.Server.serviceRegister" />
+    </key>
+  </component>
   <component name="RunManager" selected="应用程序.TestClient">
     <configuration name="TestClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.yuan.Client.TestClient" />
@@ -109,7 +113,7 @@
       <workItem from="1740054041314" duration="3199000" />
       <workItem from="1740104432637" duration="955000" />
       <workItem from="1740135375391" duration="5483000" />
-      <workItem from="1740190950436" duration="4364000" />
+      <workItem from="1740190950436" duration="8613000" />
     </task>
     <servers />
   </component>
