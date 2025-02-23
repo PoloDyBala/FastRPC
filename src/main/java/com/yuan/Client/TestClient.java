@@ -5,7 +5,7 @@ import com.yuan.common.pojo.User;
 import com.yuan.common.service.UserService;
 
 public class TestClient {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         ClientProxy clientProxy = new ClientProxy();
         UserService proxy = clientProxy.getProxy(UserService.class);
 

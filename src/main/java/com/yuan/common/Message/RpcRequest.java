@@ -1,16 +1,15 @@
 package com.yuan.common.Message;
 
+import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.io.Serializable;
 
-/**
- * @author wxx
- * @version 1.0
- * @create 2024/2/1 18:30
- * 定义发送的消息格式
- */
+
+@NoArgsConstructor
+@AllArgsConstructor
 @Data
 @Builder
 public class RpcRequest implements Serializable {

@@ -1,5 +1,6 @@
 package com.yuan.Client.serverCenter;
 
+import com.yuan.Client.cache.serviceCache;
 import org.apache.curator.RetryPolicy;
 import org.apache.curator.framework.CuratorFramework;
 import org.apache.curator.framework.CuratorFrameworkFactory;
@@ -13,6 +14,8 @@ public class ZKServiceCenter implements ServiceCenter{
     //zookeeper根路径节点
     private static final String ROOT_PATH = "MyRPC";
 
+    private serviceCache cache;
+
     //负责zookeeper客户端的初始化，并与zookeeper服务端进行连接
     public ZKServiceCenter(){
         // 指数时间重试
@@ -25,14 +28,20 @@ public class ZKServiceCenter implements ServiceCenter{
                 .sessionTimeoutMs(40000).retryPolicy(policy).namespace(ROOT_PATH).build();
         this.client.start();
         System.out.println("zookeeper 连接成功");
+
+        cache = new serviceCache();
     }
     //根据服务名（接口名）返回地址
     @Override
     public InetSocketAddress serviceDiscovery(String serviceName) {
         try {
-            List<String> strings = client.getChildren().forPath("/" + serviceName);
+            // 先从本地缓存中进行寻找
+            List<String> serviceList = cache.getServcieFromCache(serviceName);
+            if(serviceList == null){
+                serviceList=client.getChildren().forPath("/" + serviceName);
+            }
             // 这里默认用的第一个，后面加负载均衡
-            String string = strings.get(0);
+            String string = serviceList.get(0);
             return parseAddress(string);
         } catch (Exception e) {
             e.printStackTrace();

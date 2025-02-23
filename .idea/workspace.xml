@@ -5,16 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bc0e4e9b-6891-4070-966d-5aff8b626359" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yuan/Client/serverCenter/ServiceCenter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yuan/Client/serverCenter/ZKServiceCenter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yuan/Server/serviceRegister/ServiceRegister.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yuan/Server/serviceRegister/impl/ZKServiceRegister.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yuan/Client/cache/serviceCache.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yuan/Client/serverCenter/ZkWatcher/watchZK.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yuan/common/Message/MessageType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yuan/common/serializer/myCode/MyDecoder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yuan/common/serializer/myCode/MyEncoder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yuan/common/serializer/mySerializer/JsonSerializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yuan/common/serializer/mySerializer/ObjectSerializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yuan/common/serializer/mySerializer/Serializer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/yuan/Client/TestClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yuan/Client/TestClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yuan/Client/netty/nettyInitializer/NettyClientInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yuan/Client/netty/nettyInitializer/NettyClientInitializer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/yuan/Client/proxy/ClientProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yuan/Client/proxy/ClientProxy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/yuan/Client/rpcClient/impl/NettyRpcClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yuan/Client/rpcClient/impl/NettyRpcClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yuan/Server/TestServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yuan/Server/TestServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yuan/Server/provider/ServiceProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yuan/Server/provider/ServiceProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yuan/Client/serverCenter/ZKServiceCenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yuan/Client/serverCenter/ZKServiceCenter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yuan/Server/netty/nettyInitializer/NettyServerInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yuan/Server/netty/nettyInitializer/NettyServerInitializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yuan/common/Message/RpcRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yuan/common/Message/RpcRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yuan/common/Message/RpcResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yuan/common/Message/RpcResponse.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,7 +121,8 @@
       <workItem from="1740054041314" duration="3199000" />
       <workItem from="1740104432637" duration="955000" />
       <workItem from="1740135375391" duration="5483000" />
-      <workItem from="1740190950436" duration="8613000" />
+      <workItem from="1740190950436" duration="14219000" />
+      <workItem from="1740278416150" duration="2718000" />
     </task>
     <servers />
   </component>
