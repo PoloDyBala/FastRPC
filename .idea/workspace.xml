@@ -5,20 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bc0e4e9b-6891-4070-966d-5aff8b626359" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yuan/Client/retry/guavaRetry.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yuan/Server/ratelimit/RateLimit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yuan/Server/ratelimit/impl/TokenBucketRateLimitImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yuan/Server/ratelimit/provider/RateLimitProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yuan/Client/circuitBreaker/CircuitBreaker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yuan/Client/circuitBreaker/CircuitBreakerProvider.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/yuan/Client/proxy/ClientProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yuan/Client/proxy/ClientProxy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yuan/Client/serverCenter/ServiceCenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yuan/Client/serverCenter/ServiceCenter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yuan/Client/serverCenter/ZKServiceCenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yuan/Client/serverCenter/ZKServiceCenter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yuan/Server/TestServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yuan/Server/TestServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yuan/Server/netty/handler/NettyRPCServerHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yuan/Server/netty/handler/NettyRPCServerHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yuan/Server/provider/ServiceProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yuan/Server/provider/ServiceProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yuan/Server/serviceRegister/ServiceRegister.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yuan/Server/serviceRegister/ServiceRegister.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yuan/Server/serviceRegister/impl/ZKServiceRegister.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yuan/Server/serviceRegister/impl/ZKServiceRegister.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,7 +109,7 @@
       <workItem from="1740135375391" duration="5483000" />
       <workItem from="1740190950436" duration="14219000" />
       <workItem from="1740278416150" duration="12790000" />
-      <workItem from="1740399120452" duration="2775000" />
+      <workItem from="1740399120452" duration="6057000" />
     </task>
     <servers />
   </component>
