@@ -1,12 +1,15 @@
 package com.yuan.Client.serverCenter;
 
 import com.yuan.Client.cache.serviceCache;
+import com.yuan.Client.serverCenter.ZkWatcher.watchZK;
+import com.yuan.Client.serverCenter.balance.impl.ConsistencyHashBalance;
 import org.apache.curator.RetryPolicy;
 import org.apache.curator.framework.CuratorFramework;
 import org.apache.curator.framework.CuratorFrameworkFactory;
 import org.apache.curator.retry.ExponentialBackoffRetry;
 
 import java.net.InetSocketAddress;
+import java.util.ConcurrentModificationException;
 import java.util.List;
 public class ZKServiceCenter implements ServiceCenter{
     // curator 提供的zookeeper客户端
@@ -14,10 +17,12 @@ public class ZKServiceCenter implements ServiceCenter{
     //zookeeper根路径节点
     private static final String ROOT_PATH = "MyRPC";
 
+    private static final String RETRY = "CanRetry";
+
     private serviceCache cache;
 
     //负责zookeeper客户端的初始化，并与zookeeper服务端进行连接
-    public ZKServiceCenter(){
+    public ZKServiceCenter() throws InterruptedException {
         // 指数时间重试
         RetryPolicy policy = new ExponentialBackoffRetry(1000, 3);
         // zookeeper的地址固定，不管是服务提供者还是，消费者都要与之建立连接
@@ -30,6 +35,9 @@ public class ZKServiceCenter implements ServiceCenter{
         System.out.println("zookeeper 连接成功");
 
         cache = new serviceCache();
+
+        watchZK watcher = new watchZK(client, cache);
+        watcher.watchToUpdate(ROOT_PATH);
     }
     //根据服务名（接口名）返回地址
     @Override
@@ -40,9 +48,9 @@ public class ZKServiceCenter implements ServiceCenter{
             if(serviceList == null){
                 serviceList=client.getChildren().forPath("/" + serviceName);
             }
-            // 这里默认用的第一个，后面加负载均衡
-            String string = serviceList.get(0);
-            return parseAddress(string);
+            // 负载均衡得到地址
+            String address = new ConsistencyHashBalance().balance(serviceList);
+            return parseAddress(address);
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -58,5 +66,21 @@ public class ZKServiceCenter implements ServiceCenter{
     private InetSocketAddress parseAddress(String address) {
         String[] result = address.split(":");
         return new InetSocketAddress(result[0], Integer.parseInt(result[1]));
+    }
+
+    public boolean checkRetry(String serviceName) {
+        boolean canRetry =false;
+        try {
+            List<String> serviceList = client.getChildren().forPath("/" + RETRY);
+            for(String s:serviceList){
+                if(s.equals(serviceName)){
+                    System.out.println("服务"+serviceName+"在白名单上，可进行重试");
+                    canRetry=true;
+                }
+            }
+        }catch (Exception e) {
+            e.printStackTrace();
+        }
+        return canRetry;
     }
 }

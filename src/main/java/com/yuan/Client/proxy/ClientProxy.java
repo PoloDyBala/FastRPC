@@ -1,8 +1,11 @@
 package com.yuan.Client.proxy;
 
 import com.yuan.Client.IOClient;
+import com.yuan.Client.retry.guavaRetry;
 import com.yuan.Client.rpcClient.RpcClient;
 import com.yuan.Client.rpcClient.impl.NettyRpcClient;
+import com.yuan.Client.serverCenter.ServiceCenter;
+import com.yuan.Client.serverCenter.ZKServiceCenter;
 import com.yuan.common.Message.RpcRequest;
 import com.yuan.common.Message.RpcResponse;
 import lombok.AllArgsConstructor;
@@ -17,7 +20,10 @@ public class ClientProxy implements InvocationHandler {
     //传入参数service接口的class对象，反射封装成一个request
 
     private RpcClient rpcClient;
+
+    private ServiceCenter serviceCenter;
     public ClientProxy() throws InterruptedException {
+        serviceCenter = new ZKServiceCenter();
         rpcClient = new NettyRpcClient();
     }
     //jdk动态代理，每一次代理对象调用方法，都会经过此方法增强（反射获取request对象，socket发送到服务端）
@@ -29,7 +35,12 @@ public class ClientProxy implements InvocationHandler {
                 .methodName(method.getName())
                 .params(args).paramsType(method.getParameterTypes()).build();
         //数据传输
-        RpcResponse response= rpcClient.sendRequest(request);
+        RpcResponse response;
+        if(serviceCenter.checkRetry(request.getInterfaceName())){
+            response = new guavaRetry().sendServiceWithRetry(request, rpcClient);
+        }else {
+            response = rpcClient.sendRequest(request);
+        }
         return response.getData();
     }
     public <T>T getProxy(Class<T> clazz){
