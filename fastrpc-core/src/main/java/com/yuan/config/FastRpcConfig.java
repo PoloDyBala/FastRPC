@@ -18,7 +18,7 @@ import lombok.*;
 @Setter
 @Builder
 @ToString
-public class KRpcConfig {
+public class FastRpcConfig {
     //名称
     private String name = "krpc";
     //端口

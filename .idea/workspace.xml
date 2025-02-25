@@ -5,80 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bc0e4e9b-6891-4070-966d-5aff8b626359" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/fastrpc-api/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fastrpc-api/src/main/java/com/yuan/annotation/Retryable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fastrpc-api/src/main/java/com/yuan/pojo/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fastrpc-api/src/main/java/com/yuan/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fastrpc-common/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fastrpc-common/src/main/java/common/exception/SerializeException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fastrpc-common/src/main/java/common/message/MessageType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fastrpc-common/src/main/java/common/message/RpcRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fastrpc-common/src/main/java/common/message/RpcResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fastrpc-common/src/main/java/common/serializer/mycoder/MyDecoder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fastrpc-common/src/main/java/common/serializer/mycoder/MyEncoder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fastrpc-common/src/main/java/common/serializer/myserializer/HessianSerializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fastrpc-common/src/main/java/common/serializer/myserializer/JsonSerializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fastrpc-common/src/main/java/common/serializer/myserializer/KryoSerializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fastrpc-common/src/main/java/common/serializer/myserializer/ObjectSerializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fastrpc-common/src/main/java/common/serializer/myserializer/ProtostuffSerializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fastrpc-common/src/main/java/common/serializer/myserializer/Serializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fastrpc-common/src/main/java/common/spi/SpiLoader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fastrpc-common/src/main/java/common/util/ConfigUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fastrpc-consumer/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fastrpc-consumer/src/main/java/com/yuan/consumer/ConsumerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fastrpc-consumer/src/main/java/com/yuan/consumer/ConsumerTestConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fastrpc-core/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fastrpc-provider/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fastrpc-provider/src/main/java/com/yuan/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fastrpc-core/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fastrpc-provider/src/main/java/com/yuan/provider/ProviderTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fastrpc-provider/src/main/java/com/yuan/provider/impl/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fastrpc-provider/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yuan/Client/IOClient.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yuan/Client/TestClient.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yuan/Client/cache/serviceCache.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yuan/Client/circuitBreaker/CircuitBreaker.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yuan/Client/circuitBreaker/CircuitBreakerProvider.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yuan/Client/netty/handler/NettyClientHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yuan/Client/netty/nettyInitializer/NettyClientInitializer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yuan/Client/proxy/ClientProxy.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yuan/Client/retry/guavaRetry.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yuan/Client/rpcClient/RpcClient.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yuan/Client/rpcClient/impl/NettyRpcClient.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yuan/Client/rpcClient/impl/SimpleSocketRpcClient.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yuan/Client/serverCenter/ServiceCenter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yuan/Client/serverCenter/ZKServiceCenter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yuan/Client/serverCenter/ZkWatcher/watchZK.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yuan/Client/serverCenter/balance/LoadBalance.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yuan/Client/serverCenter/balance/impl/ConsistencyHashBalance.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yuan/Client/serverCenter/balance/impl/RandomLoadBalance.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yuan/Client/serverCenter/balance/impl/RoundLoadBalance.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yuan/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yuan/Server/TestServer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yuan/Server/netty/handler/NettyRPCServerHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yuan/Server/netty/nettyInitializer/NettyServerInitializer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yuan/Server/provider/ServiceProvider.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yuan/Server/ratelimit/RateLimit.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yuan/Server/ratelimit/impl/TokenBucketRateLimitImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yuan/Server/ratelimit/provider/RateLimitProvider.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yuan/Server/server/RpcServer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yuan/Server/server/impl/NettyRPCRPCServer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yuan/Server/server/impl/SimpleRPCRPCServer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yuan/Server/server/impl/ThreadPoolRPCRPCServer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yuan/Server/server/work/WorkThread.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yuan/Server/serviceRegister/ServiceRegister.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yuan/Server/serviceRegister/impl/ZKServiceRegister.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yuan/common/Message/MessageType.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yuan/common/Message/RpcRequest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yuan/common/Message/RpcResponse.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yuan/common/pojo/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yuan/common/serializer/myCode/MyDecoder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yuan/common/serializer/myCode/MyEncoder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yuan/common/serializer/mySerializer/JsonSerializer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yuan/common/serializer/mySerializer/ObjectSerializer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yuan/common/serializer/mySerializer/Serializer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yuan/common/service/Impl/UserServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yuan/common/service/UserService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fastrpc-consumer/src/main/java/com/yuan/consumer/ConsumerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/fastrpc-consumer/src/main/java/com/yuan/consumer/ConsumerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fastrpc-consumer/src/main/java/com/yuan/consumer/ConsumerTestConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/fastrpc-consumer/src/main/java/com/yuan/consumer/ConsumerTestConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fastrpc-core/src/main/java/com/yuan/FastRpcApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/fastrpc-core/src/main/java/com/yuan/FastRpcApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fastrpc-core/src/main/java/com/yuan/config/KRpcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/fastrpc-core/src/main/java/com/yuan/config/FastRpcConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fastrpc-provider/src/main/java/com/yuan/Main.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -183,7 +119,7 @@
       <workItem from="1740135375391" duration="5483000" />
       <workItem from="1740190950436" duration="14219000" />
       <workItem from="1740278416150" duration="12790000" />
-      <workItem from="1740399120452" duration="15697000" />
+      <workItem from="1740399120452" duration="16722000" />
     </task>
     <servers />
   </component>

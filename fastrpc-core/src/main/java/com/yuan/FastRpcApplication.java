@@ -1,7 +1,7 @@
 package com.yuan;
 
 
-import com.yuan.config.KRpcConfig;
+import com.yuan.config.FastRpcConfig;
 import com.yuan.config.RpcConstant;
 import common.util.ConfigUtil;
 import lombok.extern.slf4j.Slf4j;
@@ -15,27 +15,27 @@ import lombok.extern.slf4j.Slf4j;
  */
 @Slf4j
 public class FastRpcApplication {
-    private static volatile KRpcConfig rpcConfigInstance;
+    private static volatile FastRpcConfig rpcConfigInstance;
 
-    public static void initialize(KRpcConfig customRpcConfig) {
+    public static void initialize(FastRpcConfig customRpcConfig) {
         rpcConfigInstance = customRpcConfig;
         log.info("RPC 框架初始化，配置 = {}", customRpcConfig);
     }
 
     public static void initialize() {
-        KRpcConfig customRpcConfig;
+        FastRpcConfig customRpcConfig;
         try {
-            customRpcConfig = ConfigUtil.loadConfig(KRpcConfig.class, RpcConstant.CONFIG_FILE_PREFIX);
+            customRpcConfig = ConfigUtil.loadConfig(FastRpcConfig.class, RpcConstant.CONFIG_FILE_PREFIX);
             log.info("成功加载配置文件，配置文件名称 = {}", RpcConstant.CONFIG_FILE_PREFIX); // 添加成功加载的日志
         } catch (Exception e) {
             // 配置加载失败，使用默认配置
-            customRpcConfig = new KRpcConfig();
+            customRpcConfig = new FastRpcConfig();
             log.warn("配置加载失败，使用默认配置");
         }
         initialize(customRpcConfig);
     }
 
-    public static KRpcConfig getRpcConfig() {
+    public static FastRpcConfig getRpcConfig() {
         if (rpcConfigInstance == null) {
             synchronized (FastRpcApplication.class) {
                 if (rpcConfigInstance == null) {
