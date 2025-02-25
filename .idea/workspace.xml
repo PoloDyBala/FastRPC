@@ -5,16 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bc0e4e9b-6891-4070-966d-5aff8b626359" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/fastrpc-core/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fastrpc-provider/src/main/java/com/yuan/provider/ProviderTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fastrpc-provider/src/main/java/com/yuan/provider/impl/UserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fastrpc-provider/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fastrpc-consumer/src/main/java/com/yuan/consumer/ConsumerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/fastrpc-consumer/src/main/java/com/yuan/consumer/ConsumerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fastrpc-consumer/src/main/java/com/yuan/consumer/ConsumerTestConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/fastrpc-consumer/src/main/java/com/yuan/consumer/ConsumerTestConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fastrpc-core/src/main/java/com/yuan/FastRpcApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/fastrpc-core/src/main/java/com/yuan/FastRpcApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fastrpc-core/src/main/java/com/yuan/config/KRpcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/fastrpc-core/src/main/java/com/yuan/config/FastRpcConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fastrpc-provider/src/main/java/com/yuan/Main.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,9 +52,9 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "模块",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
+    "project.structure.last.edited": "项目",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -71,7 +63,20 @@
       <recent name="com.yuan.Server.serviceRegister" />
     </key>
   </component>
-  <component name="RunManager" selected="应用程序.TestClient">
+  <component name="RunManager" selected="应用程序.ConsumerTestConfig">
+    <configuration name="ConsumerTestConfig" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.yuan.consumer.ConsumerTestConfig" />
+      <module name="fastrpc-consumer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yuan.consumer.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TestClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.yuan.Client.TestClient" />
       <module name="FastRPC" />
@@ -100,6 +105,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="应用程序.ConsumerTestConfig" />
         <item itemvalue="应用程序.TestClient" />
         <item itemvalue="应用程序.TestServer" />
       </list>
@@ -119,7 +125,7 @@
       <workItem from="1740135375391" duration="5483000" />
       <workItem from="1740190950436" duration="14219000" />
       <workItem from="1740278416150" duration="12790000" />
-      <workItem from="1740399120452" duration="16722000" />
+      <workItem from="1740399120452" duration="18517000" />
     </task>
     <servers />
   </component>
